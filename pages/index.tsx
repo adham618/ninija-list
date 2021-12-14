@@ -1,11 +1,16 @@
 import type { NextPage } from 'next'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-
-    </div>
+    <>
+      <Navbar />
+      <h1>Homepage</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae eligendi ad similique quod id quis sapiente sint autem blanditiis error voluptates, eius, libero dolorum soluta inventore! Nostrum, obcaecati magni.</p>
+      <Footer />
+    </>
   )
 }
 
