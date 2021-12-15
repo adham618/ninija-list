@@ -1,4 +1,5 @@
 import { NextPage } from "next"
+import Link from "next/link"
 import styles from "../../styles/Ninjas.module.css"
 interface indexProps {
   ninjas: any
@@ -7,15 +8,15 @@ interface indexProps {
 const List: NextPage<indexProps> = ({ ninjas }) => {
   return (
     <div>
-      <h1>Ninjas</h1>
+      <h1>All Ninjas</h1>
       {ninjas.map((ninja: any) => (
-        <div key={ninja.id}>
+        <Link href={'/ninjas/' + ninja.id} key={ninja.id}>
           <a className={styles.single}>
             <h2>
               {ninja.name}
             </h2>
           </a>
-        </div>
+        </Link>
       ))}
     </div>
   )
