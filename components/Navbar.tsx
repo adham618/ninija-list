@@ -1,14 +1,11 @@
+import Image from "next/image"
 import Link from "next/link"
 
-interface NavbarProps {
-
-}
-
-const Navbar: React.FC<NavbarProps> = ({ }) => {
+const Navbar: React.FC = ({ }) => {
   return (
     <nav>
       <div className="logo">
-        <h1>Ninja List</h1>
+        <Image src='/logo.png' width={128} height={77} alt='logo' />
       </div>
       <Link href="/"><a>Home</a></Link>
       <Link href="/about"><a>About</a></Link>
