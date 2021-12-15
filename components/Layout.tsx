@@ -1,8 +1,13 @@
-const Layout: React.FC = () => {
-  return (
-    <div>
+import Footer from "./Footer"
+import Navbar from "./Navbar"
 
-    </div>
+const Layout: React.FC = ({ children }) => {
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
   )
 }
 export default Layout
