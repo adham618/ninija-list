@@ -1,8 +1,8 @@
 const Footer: React.FC = () => {
   return (
-    <div>
+    <footer>
       Copyright 2022 Ninja List
-    </div>
+    </footer>
   )
 }
 export default Footer
