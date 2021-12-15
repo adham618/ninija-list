@@ -1,7 +1,16 @@
 import { NextPage } from "next"
 import Link from "next/link"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 const NotFound: NextPage = () => {
+  const router = useRouter()
+  useEffect(() => {
+    setTimeout(() => {
+      router.back()
+      // router.push('/')
+    }, 3000)
+  })
   return (
     <div className="not-found">
       <h1>Oooops...</h1>
