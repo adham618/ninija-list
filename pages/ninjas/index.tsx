@@ -1,8 +1,8 @@
-const index: React.FC = () => {
+const List: React.FC = () => {
   return (
     <div>
       <h1>Ninjas</h1>
     </div>
   )
 }
-export default index
+export default List
